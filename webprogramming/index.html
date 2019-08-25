@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<title>YoungHun Lee's Portfolio</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.css">
+	<link rel="stylesheet" href="../static/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="../static/materialize/js/materialize.min.js"></script>
+	<link rel="icon" href="../static/img/initial_favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+		  <nav>
+		    <div class="nav-wrapper">
+		      <a href="http://younghunlee.com" class="brand-logo">&nbsp;&nbsp;YOUNGHUN LEE</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		      <a href="#" data-activates="side-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		      <ul class="side-nav" id="side-menu">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		</header>
+		<div class="container">
+			<div class="works">
+				<div class="row">
+					<div class="col s12 m6 l8">
+	          <img src="../static/img/web_t.png" class="responsive-img" alt="Web programming thumbnail image">
+	        </div>
+	        <div class="col s12 m6 l4">
+	          <div class="card blue-grey darken-1">
+	            <div class="card-content white-text">
+	              <h4><span class="card-title">Web Programming</span></h4>
+	              <p><span class="smalltitle">Area</span>Web Programming</p>
+	              <p><span class="smalltitle">Team</span>Personal, Team</p>
+	              <p><span class="smalltitle">Role</span>Front-end developer</p>
+	              <p><span class="smalltitle">Tool</span>D3.js, Heroku, Flask</p>
+	              <p><span class="smalltitle">Date</span>Oct 2015 ~ Dec 2015</p>
+	              <p><span class="smalltitle">Platform</span>Web</p>
+	            </div>
+	            <div class="card-action">
+	              <a href="../braillebuddy"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+	              <span>Project 8 of 14</span>
+	              <a href="../arduino"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="description">
+				<h5>Overview</h5>
+				<p>I took SI 539 - Design of Complex Web Sites, and designed and implemented a webpage for personal portfolio. Also, I paired up with another student and made a team blog website powered by Heroku and Flask.</p>
+				<p>&nbsp;</p>
+
+				<h5>Details</h5>
+				<p>One of the main features of the personal portfolio website was a WordCloud to describe my interests. I used D3.js library to create word clouds and modified them as responsive svg objects.</p>
+				<p>&nbsp;</p>
+				<img src="graph.png" class="responsive-img" alt="Force-directed graph of team blog main page">
+				<p>For the teamblog, I tried to visualize blog posts into force-directed graph - each node represents each blog post and edges between nodes describe the relationship between blog posts. For example, if two posts were about movie review, they are connected to each other, but a blog post about technology cannot be connected with these nodes. I implemented front-end view of the website(drawing graphs by using D3.js library), and my teammate managed back-end side.</p>
+
+				<h5>Outcome</h5>
+				<p><a href="http://younggns.people.si.umich.edu/Portfolio/" target="_blank">Portfolio Website</a></p>
+				<p><a href="http://obscure-thicket-8519.herokuapp.com" target="_blank">Team Blog Website</a></p>
+				<p><a href="https://github.com/YHLee89/newteamblog" target="_blank">Team Blog Github Repo</a></p>
+
+				
+			</div>
+
+		</div>
+
+		<div class="push"></div>
+	</div>
+
+	<footer class="footer">
+		<h2>YOUNGHUN LEE</h2>
+		<span class="footerlabel">FULL STACK DEVELOP | UX DESIGN | RESEARCH</span>
+		<div class="footericon">
+			<a href="https://www.linkedin.com/in/younghun-lee-937892106" target="_blank">
+				<i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#0077b5;"></i>
+			</a>&nbsp;&nbsp;
+			<a href="https://github.com/YHLee89" target="_blank">
+				<i class="fa fa-github fa-2x" aria-hidden="true" style="color:black;"></i>
+			</a>&nbsp;&nbsp;
+		</div>
+		<span class="copyright">&copy; YOUNGHUN LEE 2016</span>
+
+	</footer>
+
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+		
+	</script>
+</body>
+</html>

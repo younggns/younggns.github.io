@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<title>YoungHun Lee's Portfolio</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.css">
+	<link rel="stylesheet" href="../static/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="../static/materialize/js/materialize.min.js"></script>
+	<link rel="icon" href="../static/img/initial_favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+		  <nav>
+		    <div class="nav-wrapper">
+		      <a href="http://younghunlee.com" class="brand-logo">&nbsp;&nbsp;YOUNGHUN LEE</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		      <a href="#" data-activates="side-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		      <ul class="side-nav" id="side-menu">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		</header>
+		<div class="container">
+			<div class="works">
+				<div class="row">
+					<div class="col s12 m6 l8">
+	          <img src="../static/img/tweet_t.png" class="responsive-img" alt="Twitter Analysis thumbnail image">
+	        </div>
+	        <div class="col s12 m6 l4">
+	          <div class="card blue-grey darken-1">
+	            <div class="card-content white-text">
+	              <h4><span class="card-title">Analyzing Tweets</span></h4>
+	              <p><span class="smalltitle">Area</span>Statistics, Info Retrieval and Visualization</p>
+	              <p><span class="smalltitle">Team</span>Team</p>
+	              <p><span class="smalltitle">Role</span>Developer, Designer</p>
+	              <p><span class="smalltitle">Tool</span>Python, Tweepy, Plotly</p>
+	              <p><span class="smalltitle">Date</span>Nov 2016 ~ Dec 2016</p>
+	              <p><span class="smalltitle">Platform</span>Web</p>
+	            </div>
+	            <div class="card-action">
+	              <a href="../danchew"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+	              <span>Project 1 of 16</span>
+	              <a href="../gale"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="description">
+				<h5>Overview</h5>
+				<p>I took SI 544 - Introductory Statistics and Data Analysis course. Our team conducted a project to analyze the effect of Trump's presidential win on the average number of hate crimes nationwide. It was hypothesized that there would be a higher mean of hate incidents after the 2016 presidential election compared to before the election. The data was extracted from Twitter, where the number of tweets reporting hate crimes before the election was compared to the number of hate crime-reporting tweets after the election.</p>
+				<p>&nbsp;</p>
+
+				<h5>Details</h5>
+				
+				<div class="row">
+					<div class="col s12 m6">
+						<img src="../static/img/tweet_stats.png" class="responsive-img" alt="Statistical equations for analysis">
+					</div>
+					<div class="col s12 m6">
+						<p>We used the concepts of mean, standard deviation, and hypothesis testing to extract meaningful findings from our dataset. The null hypothesis and the alternative, as well as the t-statistics for the hypothesis testing in this research are on the left. We expected to find a higher number of hate crime reporting tweets after Trump’s win compared to before.</p>
+					</div>
+				</div>
+				<p>&nbsp;</p>
+
+				<p>The dataset we used in this research are the Twitter tweets posted by 2,258 colleges and universities in the United States. After I wrote a Python program to retrieve the tweets posted by these colleges and universities in a date range of one month before and after the election, I filtered tweets based on target words related to the topic of hate crime. I referred to a Crime Vocabulary Word List provided by MyVocabulary.com to come up with the list of target words.</p>
+				<p>&nbsp;</p>
+
+				<p>As a result, we had two datasets of tweets (before and after the election) that were related to hate crimes, and calculated the mean and standard deviation for each group. We were then able to investigate the null hypothesis using these values.</p>
+
+				<div class="row">
+					<div class="col s12 m6">
+						<img src="../static/img/tweet_result.png" class="responsive-img" alt="Statistical results from the analysis">
+					</div>
+					<div class="col s12 m6">
+						<p>The result of our research was surprising because we expected a large increase in the mean number of hate crime-reporting tweets after the presidential election compared to before the election. However, the result showed that there is no significant difference between the mean number of hate crime-reporting tweets before and after the election.</p>
+					</div>
+				</div>
+				<img src="../static/img/tweet_graph.png" class="responsive-img" alt="The graph of distribution of the t-statistics">
+				<p>&nbsp;</p>
+
+				<h5>Conclusion</h5>
+				<p>While the tweets posted by college and university Twitter accounts were the main dataset in this research, this may lack representativeness in conducting a research to test a hypothesis on a national level. The results cannot be generalized to all populations and are somewhat limited to the student population. Thus, further studies should consider retrieving tweets from accounts that are more related to the general public, such as accounts of police departments in each city (e.g. @NYPDnews).</p>
+				
+				<img src="../static/img/tweet_t.png" class="responsive-img" alt="The graph of distribution of the t-statistics">
+				<p>Red dots: Universities which tweeted about hate crimes only after the election</p>
+				<p>Grey dots: Universities which tweeted about hate crimes only before the election</p>
+				<p>Dark ed dots: Universities which tweeted about hate crimes both before and after the election</p>
+
+
+				<h5>Outcome</h5>
+				<p><a href="https://github.com/younggns/TweetAnalyzer" target="_blank">Github Repo</a></p>
+				<p><a href="TwitterAnalysis_Report.pdf" target="_blank">Report</a></p>
+
+
+				<p>&nbsp;</p>
+
+				
+			</div>
+
+		</div>
+
+		<div class="push"></div>
+	</div>
+
+	<footer class="footer">
+		<h2>YOUNGHUN LEE</h2>
+		<span class="footerlabel">FULL STACK DEVELOP | UX DESIGN | RESEARCH</span>
+		<div class="footericon">
+			<a href="https://www.linkedin.com/in/younghun-lee-937892106" target="_blank">
+				<i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#0077b5;"></i>
+			</a>&nbsp;&nbsp;
+			<a href="https://github.com/YHLee89" target="_blank">
+				<i class="fa fa-github fa-2x" aria-hidden="true" style="color:black;"></i>
+			</a>&nbsp;&nbsp;
+		</div>
+		<span class="copyright">&copy; YOUNGHUN LEE 2016</span>
+
+	</footer>
+
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+		
+	</script>
+</body>
+</html>

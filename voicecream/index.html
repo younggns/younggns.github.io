@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<title>YoungHun Lee's Portfolio</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.css">
+	<link rel="stylesheet" href="../static/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="../static/materialize/js/materialize.min.js"></script>
+	<link rel="icon" href="../static/img/initial_favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+		  <nav>
+		    <div class="nav-wrapper">
+		      <a href="http://younghunlee.com" class="brand-logo">&nbsp;&nbsp;YOUNGHUN LEE</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		      <a href="#" data-activates="side-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		      <ul class="side-nav" id="side-menu">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		</header>
+		<div class="container">
+			<div class="works">
+				<div class="row">
+					<div class="col s12 m6 l8">
+	          <img src="../static/img/voicecream_t.jpg" class="responsive-img" alt="Voicecream thumbnail image">
+	        </div>
+	        <div class="col s12 m6 l4">
+	          <div class="card blue-grey darken-1">
+	            <div class="card-content white-text">
+	              <h4><span class="card-title">Voicecream</span></h4>
+	              <p><span class="smalltitle">Area</span>Voice Recognition</p>
+	              <p><span class="smalltitle">Team</span>Personal</p>
+	              <p><span class="smalltitle">Role</span>Developer</p>
+	              <p><span class="smalltitle">Tool</span>Processing</p>
+	              <p><span class="smalltitle">Date</span>Mar 2014 ~ May 2014</p>
+	              <p><span class="smalltitle">Platform</span>Processing</p>
+	            </div>
+	            <div class="card-action">
+	              <a href="../sawtoothbubble"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+	              <span>Project 11 of 14</span>
+	              <a href="../morpheme"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="description">
+				<h5>Overview</h5>
+				<p>This project was for visualizing human voices and mapping them into icecream flavors.</p>
+				<p>&nbsp;</p>
+
+				<h5>Details</h5>
+				<p>Human beings have different personalities and most of them are related to their appearances, voices, textures, or even smells. However, it is hard to describe a person with the sense of taste. For extending ways of identifying each person, I've come up with this project - mapping person to specific tastes.</p>
+				<p>&nbsp;</p>
+
+				<p>In order to do this, I've assumed that each person's taste can be linked with their voices, because words for describing one's voice have similarities with words for describing flavors. For example, we usually call someone as a 'sweet' person, and the word 'sweet' is also used in describing flavors. From this assumption, I thought it would be interesting to think about scenarios of people at the ice cream store.</p>
+				<p>&nbsp;</p>
+
+				<img src="example.png" class="responsive-img" alt="Scenario drawing of a person at the ice cream store">
+				<p>So, I designed this application for ice cream stores. If a person came into the store, and says "One ice cream, please", then the voice analyzer will detect the frequency, tone, speed of the voice, and recommend specific ice cream flavors to the customer. Therefore, each customer can have their customized ice cream flavors, and they will get other flavors based on their daily feelings.</p>
+
+				<p>I implemented the prototype of this idea with Processing.</p>
+
+				<h5>Outcome</h5>
+				<video class="responsive-video" controls><source src="voicecream.mp4" type="video/mp4"></video>
+
+				
+			</div>
+
+		</div>
+
+		<div class="push"></div>
+	</div>
+
+	<footer class="footer">
+		<h2>YOUNGHUN LEE</h2>
+		<span class="footerlabel">FULL STACK DEVELOP | UX DESIGN | RESEARCH</span>
+		<div class="footericon">
+			<a href="https://www.linkedin.com/in/younghun-lee-937892106" target="_blank">
+				<i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#0077b5;"></i>
+			</a>&nbsp;&nbsp;
+			<a href="https://github.com/YHLee89" target="_blank">
+				<i class="fa fa-github fa-2x" aria-hidden="true" style="color:black;"></i>
+			</a>&nbsp;&nbsp;
+		</div>
+		<span class="copyright">&copy; YOUNGHUN LEE 2016</span>
+
+	</footer>
+
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+		
+	</script>
+</body>
+</html>

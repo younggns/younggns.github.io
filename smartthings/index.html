@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<title>YoungHun Lee's Portfolio</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.css">
+	<link rel="stylesheet" href="../static/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="../static/materialize/js/materialize.min.js"></script>
+	<link rel="icon" href="../static/img/initial_favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+		  <nav>
+		    <div class="nav-wrapper">
+		      <a href="http://younghunlee.com" class="brand-logo">&nbsp;&nbsp;YOUNGHUN LEE</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		      <a href="#" data-activates="side-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		      <ul class="side-nav" id="side-menu">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		</header>
+		<div class="container">
+			<div class="works">
+				<div class="row">
+					<div class="col s12 m6 l8">
+	          <img src="../static/img/st_t.png" class="responsive-img" alt="SmartThings thumbnail image">
+	        </div>
+	        <div class="col s12 m6 l4">
+	          <div class="card blue-grey darken-1">
+	            <div class="card-content white-text">
+	              <h4><span class="card-title">SmartThings</span></h4>
+	              <p><span class="smalltitle">Area</span>Research</p>
+	              <p><span class="smalltitle">Team</span>DoIIIT Studio</p>
+	              <p><span class="smalltitle">Role</span>Back-end developer</p>
+	              <p><span class="smalltitle">Tool</span>Groovy</p>
+	              <p><span class="smalltitle">Date</span>Feb 2016 ~ Apr 2016</p>
+	              <p><span class="smalltitle">Platform</span>Web, Mobile App</p>
+	            </div>
+	            <div class="card-action">
+	              <a href="../danchew"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+	              <span>Project 1 of 14</span>
+	              <a href="../usabilitytest"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="description">
+				<h5>Overview</h5>
+				<p>I participated in the project advised by professor <a href="https://scholar.google.com/citations?user=gPKDZtwAAAAJ&amp;hl=ko&amp;oi=ao" target="_blank">Mark W. Newman</a>, and helped one of his PhD student <a href="https://scholar.google.com/citations?user=XTEh5vUAAAAJ&amp;hl=ko&amp;oi=ao" target="_blank">Chuan-Che Huang</a> as a research assistant.</p>
+				<p>&nbsp;</p>
+
+				<h5>Details</h5>
+				<p>&nbsp;</p>
+				<img src="st_diagram.png" class="responsive-img" alt="Project diagram">
+				<p>My main responsibilities were building a smart home hub with SmartThings sensors, writing codes to grab data from the hub, desigining a schema for storing data, and dumping data into Firebase database.</p>
+				<p>&nbsp;</p>
+
+				<div class="row">
+					<div class="col s12 m6">
+						<img src="st_sensors.png" class="responsive-img" alt="Sensors">
+					</div>
+					<div class="col s12 m6">
+						<p>For this project, I used three main sensors - Aeon Multisensor, SmartThings Contact sensor, and SmartThings Smart Outlet. From these sensors, I could get information about both real-time(temperature, humidity, illuminance) and event-based(door status, outlet status) data. </p>
+					</div>
+				</div>
+				<p>&nbsp;</p>
+
+				<div class="row">
+					<div class="col s12 m6">
+						<p>After setting up all sensors, I could access smart home hub and grab all sensor data through Groovy code. Then I came up with database schema to store data. The database has three main branches - events, timeseries, and metrics. Event branch is for storing event-based sensor(Contact Sensor, Smart Outlet) data, timereries branch is for time-based sensor(Aeon Multisensor) data, and metrics branch is for storing metadata of each household and user.</p>	
+					</div>
+					<div class="col s12 m6">
+						<img src="st_schema.png" class="responsive-img" alt="Database schema">
+					</div>
+				</div>
+
+				<p>&nbsp;</p>
+
+				<h5>Further Step</h5>
+				<p>For the next step, this project is about to launch a mobile application for end-users. This application grabs data from Firebase database and show them to users, and it also lets users to modify their temperature settings based on the data.</p>
+
+				
+			</div>
+
+		</div>
+
+		<div class="push"></div>
+	</div>
+
+	<footer class="footer">
+		<h2>YOUNGHUN LEE</h2>
+		<span class="footerlabel">FULL STACK DEVELOP | UX DESIGN | RESEARCH</span>
+		<div class="footericon">
+			<a href="https://www.linkedin.com/in/younghun-lee-937892106" target="_blank">
+				<i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#0077b5;"></i>
+			</a>&nbsp;&nbsp;
+			<a href="https://github.com/YHLee89" target="_blank">
+				<i class="fa fa-github fa-2x" aria-hidden="true" style="color:black;"></i>
+			</a>&nbsp;&nbsp;
+		</div>
+		<span class="copyright">&copy; YOUNGHUN LEE 2016</span>
+
+	</footer>
+
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+		
+	</script>
+</body>
+</html>

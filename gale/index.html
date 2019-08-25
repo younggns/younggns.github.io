@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<title>YoungHun Lee's Portfolio</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.css">
+	<link rel="stylesheet" href="../static/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="../static/materialize/js/materialize.min.js"></script>
+	<link rel="icon" href="../static/img/initial_favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+		  <nav>
+		    <div class="nav-wrapper">
+		      <a href="http://younghunlee.com" class="brand-logo">&nbsp;&nbsp;YOUNGHUN LEE</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		      <a href="#" data-activates="side-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		      <ul class="side-nav" id="side-menu">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		</header>
+		<div class="container">
+			<div class="works">
+				<div class="row">
+					<div class="col s12 m6 l8">
+	          <img src="../static/img/gale_t.png" class="responsive-img" alt="Gale thumbnail image">
+	        </div>
+	        <div class="col s12 m6 l4">
+	          <div class="card blue-grey darken-1">
+	            <div class="card-content white-text">
+	              <h4><span class="card-title">Gale Cengage Learning</span></h4>
+	              <p><span class="smalltitle">Area</span>Professional</p>
+	              <p><span class="smalltitle">Team</span>Gale UX team</p>
+	              <p><span class="smalltitle">Role</span>Researcher, Designer, Developer</p>
+	              <p><span class="smalltitle">Tool</span>Python, Plotly</p>
+	              <p><span class="smalltitle">Date</span>Jun 2016 ~ Aug 2016</p>
+	              <p><span class="smalltitle">Platform</span>Web</p>
+	            </div>
+	            <div class="card-action">
+	              <a href="../danchew"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+	              <span>Project 1 of 15</span>
+	              <a href="../smartthings"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="description">
+				<h5>Overview</h5>
+				<p>I worked at <a href="http://www.gale.com" target="_blank">Gale Cengage Learning</a> as a UX Developer Intern during 2016 summer term. My internship project was developing a visualization tool for internal salespeople to better demonstrate value of Gale resources.</p>
+				<p>&nbsp;</p>
+
+				<h5>Process</h5>
+				<p class='process'>1. <b>Research</b>&nbsp;&nbsp; As a first step, I wrote up a problem statement document to figure out problems, causes, project goal and scopes. After that, I've conducted 9 interviews with salespeople and product manager to better understand sales processes, customers' behaviors, and users' pain points. From these understandings, I came up with user persona and scenario.</p>
+				<p class='process'>2. <b>Data Processing and Analysis</b>&nbsp;&nbsp; In order to provide meaningful information to salespeople, I used different datasets from different teams and tried to find useful results by combining datasets.</p>
+				<p>What I've used were datasets about students' search results, and I calculated 'importance level' of each query term so that salespeople can easily recognize what to sell.</p>
+				<p class='process'>3. <b>Visualized Prototype</b>&nbsp;&nbsp; For making it easier to use, I decided to develop the toolkit on the web. I designed a dashboard interface and displayed pre-processed data and also utilized <a href="https://plot.ly" target="_blank">Plotly</a> to create a graph. The recommendation system was also embedded in the dashboard.</p>
+				<p class='process'>4. <b>Validation &amp; Finalization</b>&nbsp;&nbsp; After prototyping, I also recruited several potential users to validate the system. I got feedbacks from them and finalized the product by implementing more features and improving usabilities.</p>
+				<p>&nbsp;</p>
+
+				<h5>Demo Video</h5>
+				<!--Put video file-->
+				<video class="responsive-video" controls><source src="OERCommons.mp4" type="video/mp4"></video>
+
+				<h5>Details</h5>
+				<p>&nbsp;</p>
+				<p><b>Importance Level</b>&nbsp;&nbsp; I used datasets about the number of searches, the number of retrieved searches, and total days of searches to calculate importance level of each query term. If a query term has high number of searches, low retrieval rate, and persistent(based on total days of searches), we can assume that the query term is important. More accurately, I could come up with below equation with normalizations.</p>
+				<!--Put equation image file-->
+				<img src="st_diagram.png" class="responsive-img" alt="Project diagram">
+				<p>&nbsp;</p>
+
+				<div class="row">
+					<div class="col s12 m6">
+						<!--Put recommendation list image file-->
+						<img src="st_sensors.png" class="responsive-img" alt="Sensors">
+					</div>
+					<div class="col s12 m6">
+						<p><b>Recommendation Model</b>&nbsp;&nbsp; Based on the importance level, I could recommend a list of resources(or books) that each customer might want to have to satisfy their users' needs. To do this, I used other institutions' existing collections who were actually good at providing the same information.</p>
+					</div>
+				</div>
+				<p>&nbsp;</p>
+
+
+				<p>&nbsp;</p>
+
+				
+			</div>
+
+		</div>
+
+		<div class="push"></div>
+	</div>
+
+	<footer class="footer">
+		<h2>YOUNGHUN LEE</h2>
+		<span class="footerlabel">FULL STACK DEVELOP | UX DESIGN | RESEARCH</span>
+		<div class="footericon">
+			<a href="https://www.linkedin.com/in/younghun-lee-937892106" target="_blank">
+				<i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#0077b5;"></i>
+			</a>&nbsp;&nbsp;
+			<a href="https://github.com/YHLee89" target="_blank">
+				<i class="fa fa-github fa-2x" aria-hidden="true" style="color:black;"></i>
+			</a>&nbsp;&nbsp;
+		</div>
+		<span class="copyright">&copy; YOUNGHUN LEE 2016</span>
+
+	</footer>
+
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+		
+	</script>
+</body>
+</html>

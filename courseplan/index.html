@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<title>YoungHun Lee's Portfolio</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.css">
+	<link rel="stylesheet" href="../static/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="../static/materialize/js/materialize.min.js"></script>
+	<link rel="icon" href="../static/img/initial_favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+		  <nav>
+		    <div class="nav-wrapper">
+		      <a href="http://younghunlee.com" class="brand-logo">&nbsp;&nbsp;YOUNGHUN LEE</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		      <a href="#" data-activates="side-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		      <ul class="side-nav" id="side-menu">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		</header>
+		<div class="container">
+			<div class="works">
+				<div class="row">
+					<div class="col s12 m6 l8">
+	          <img src="../static/img/courseplan_t.png" class="responsive-img" alt="Course Planning Tool thumbnail image">
+	        </div>
+	        <div class="col s12 m6 l4">
+	          <div class="card blue-grey darken-1">
+	            <div class="card-content white-text">
+	              <h4><span class="card-title">Course Planning Tool</span></h4>
+	              <p><span class="smalltitle">Area</span>Info Retrieval</p>
+	              <p><span class="smalltitle">Team</span>Independent</p>
+	              <p><span class="smalltitle">Role</span>Developer, Designer</p>
+	              <p><span class="smalltitle">Tool</span>Django, Heroku</p>
+	              <p><span class="smalltitle">Date</span>May 2017 ~ Jul 2017</p>
+	              <p><span class="smalltitle">Platform</span>Web application</p>
+	            </div>
+	            <div class="card-action">
+	              <a href="../danchew"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+	              <span>Project 1 of 18</span>
+	              <a href="../fakenews"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="description">
+				<h5>Overview</h5>
+				<p>
+				I developed a django web application that helps University of Michigan, School of Information Masters students to plan their semester schedules. In the application, students can see the availability of each course in each semester as they choose courses they are considering to take in the future.
+				</p>
+				<p>&nbsp;</p>
+
+				<h5>Details</h5>
+				<p>University of Michigan, School of Information introduced a new curriculum in 2017, which is based on 'mastery courses' that have many pre-requisite courses. This structure required students to plan backwards from the mastery course they are considering, and many aspects made the task more complicated: number of total credits, constraints on courses, different offerings per semester, multiple choice pre-requisites, and so on.</p>
+				<p>In order to handle this complexity, I implemented a top-down algorithm, letting users select a mastery course to reduce the number of options. I also enhanced the usability of the application by changing the status of each course real-time based on user inputs. For example, certain courses turn into 'available' only if a user selects all pre-requisite courses.</p>
+				<p>&nbsp;</p>
+
+				<h5>Results</h5>
+				
+				<p>This beta tool is not as polished as it could be, and that is because the school had to ask me to stop working on the project, though I was interested in continuing – School ran out of funds for the project. Student feedback on the tool was all positive, with the most frequent requests being of a kind that asked for more features.</p>
+				<p><a href="https://umsi-course-planning.herokuapp.com" target="_blank">Link to the web application</p>
+				
+			</div>
+
+		</div>
+
+		<div class="push"></div>
+	</div>
+
+	<footer class="footer">
+		<h2>YOUNGHUN LEE</h2>
+		<span class="footerlabel">FULL STACK DEVELOP | UX DESIGN | RESEARCH</span>
+		<div class="footericon">
+			<a href="https://www.linkedin.com/in/younghun-lee-937892106" target="_blank">
+				<i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#0077b5;"></i>
+			</a>&nbsp;&nbsp;
+			<a href="https://github.com/YHLee89" target="_blank">
+				<i class="fa fa-github fa-2x" aria-hidden="true" style="color:black;"></i>
+			</a>&nbsp;&nbsp;
+		</div>
+		<span class="copyright">&copy; YOUNGHUN LEE 2016</span>
+
+	</footer>
+
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+		
+	</script>
+</body>
+</html>

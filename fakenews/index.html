@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<title>YoungHun Lee's Portfolio</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.css">
+	<link rel="stylesheet" href="../static/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="../static/materialize/js/materialize.min.js"></script>
+	<link rel="icon" href="../static/img/initial_favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+		  <nav>
+		    <div class="nav-wrapper">
+		      <a href="http://younghunlee.com" class="brand-logo">&nbsp;&nbsp;YOUNGHUN LEE</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		      <a href="#" data-activates="side-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		      <ul class="side-nav" id="side-menu">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		</header>
+		<div class="container">
+			<div class="works">
+				<div class="row">
+					<div class="col s12 m6 l8">
+	          <img src="../static/img/fakenews_t.png" class="responsive-img" alt="Fake News Diffusion Network thumbnail image">
+	        </div>
+	        <div class="col s12 m6 l4">
+	          <div class="card blue-grey darken-1">
+	            <div class="card-content white-text">
+	              <h4><span class="card-title">Fake News Diffusion Network</span></h4>
+	              <p><span class="smalltitle">Area</span>Networks, Data Mining</p>
+	              <p><span class="smalltitle">Team</span>Class Project</p>
+	              <p><span class="smalltitle">Role</span>Developer</p>
+	              <p><span class="smalltitle">Tool</span>Tweepy, Python</p>
+	              <p><span class="smalltitle">Date</span>Feb 2017 ~ Apr 2017</p>
+	              <p><span class="smalltitle">Platform</span>Python program</p>
+	            </div>
+	            <div class="card-action">
+	              <a href="../courseplan"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+	              <span>Project 2 of 18</span>
+	              <a href="../tweet"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="description">
+				<h5>Overview</h5>
+				<p>
+				I took SI 608 - Networks. Our team conducted a project to analyze the diffusion patterns of news in a social network platform, Twitter. Our main purpose was to reveal differences between real news and fake news. The data was extracted from Twitter, where the number of tweets posting and spreading information. Our team collected over 12 million tweets, identified fake news URLs, and analyzed network attributes of users.
+				</p>
+				<p>&nbsp;</p>
+
+				<h5>Process</h5>
+				<p class='process'>1. Clarifying fake news and real news] Labelling a tweet as a fake news tweet or real news tweet can be very subjective and complex. In order to address the complexity, we labelled tweets as fake news if they contain a URL to news sites and blogs which have been identified to be a fake news site.</p>
+				<p class='process'>2. Data mining] We downloaded tweets over a period of ten days - March 18 to March 28, 2017. Our team identified 277 fake news sites mentioned in the over 7 million tweets, and used over 5 million tweets for real news.</p>
+				<p class='process'>3. Constructing networks] Since Twitter does not allow to reveal the chain of retweets, we used follower networks among top 100 users from the dataset to construct networks. This approach came from the assumption that it is likely the top 100 users inflenced the tweets posted by their friends and followers, and vice versa.</p>
+				<p class='process'>4. Network analysis] We analyzed the network graphs and network measures like degree centrality, closeness centrality, clustering coefficient, and diameter. This allowed us to do visual and numerical comparison for the fake and real news networks.</p>
+				<p>&nbsp;</p>
+
+				<h5>Findings</h5>
+				<div class="row">
+					<div class="col s12 m6">
+						<img src="table.png" class="responsive-img" alt="Network analysis table">
+					</div>
+					<div class="col s12 m6">
+						<p>The first takeaway from these measures was that the  during the same time period, fake news network was much larger than the real news network. This observation is further bolstered by the size of the largest SCC (strongest connected component).</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 m6">
+						<img src="cluster.png" class="responsive-img" alt="Cluster analysis image">
+					</div>
+					<div class="col s12 m6">
+						<p>The size and number of SCCs indicates that compared to fake news which has information concentrated in one large cluster, there are several ‘clusters’ of information groups in case of real news. Also, there is a higher percentage of bidirectional edges in fake news network than in real news networks, indicating users often are mutual followers in case of fake news network.</p>
+					</div>
+				</div>
+				
+				<p>&nbsp;</p>
+				<p><a href="fakenewsreport.pdf" target="_blank">Detailed result report</a></p>
+
+				
+			</div>
+
+		</div>
+
+		<div class="push"></div>
+	</div>
+
+	<footer class="footer">
+		<h2>YOUNGHUN LEE</h2>
+		<span class="footerlabel">FULL STACK DEVELOP | UX DESIGN | RESEARCH</span>
+		<div class="footericon">
+			<a href="https://www.linkedin.com/in/younghun-lee-937892106" target="_blank">
+				<i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#0077b5;"></i>
+			</a>&nbsp;&nbsp;
+			<a href="https://github.com/YHLee89" target="_blank">
+				<i class="fa fa-github fa-2x" aria-hidden="true" style="color:black;"></i>
+			</a>&nbsp;&nbsp;
+		</div>
+		<span class="copyright">&copy; YOUNGHUN LEE 2016</span>
+
+	</footer>
+
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+		
+	</script>
+</body>
+</html>

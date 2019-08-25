@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<title>YoungHun Lee's Portfolio</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.css">
+	<link rel="stylesheet" href="../static/font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="../static/materialize/js/materialize.min.js"></script>
+	<link rel="icon" href="../static/img/initial_favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+		  <nav>
+		    <div class="nav-wrapper">
+		      <a href="http://younghunlee.com" class="brand-logo">&nbsp;&nbsp;YOUNGHUN LEE</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		      <a href="#" data-activates="side-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		      <ul class="side-nav" id="side-menu">
+		        <li class="active"><a href=".." class="active">PORTFOLIO</a></li>
+		        <li><a href="../about">ABOUT</a></li>
+		        <li><a href="../static/file/resume_younghunlee.pdf" target="_blank">RESUME</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		</header>
+		<div class="container">
+			<div class="works">
+				<div class="row">
+					<div class="col s12 m6 l8">
+	          <img src="../static/img/catchup_t.png" class="responsive-img" alt="CatchUp thumbnail image">
+	        </div>
+	        <div class="col s12 m6 l4">
+	          <div class="card blue-grey darken-1">
+	            <div class="card-content white-text">
+	              <h4><span class="card-title">CatchUp</span></h4>
+	              <p><span class="smalltitle">Area</span>Social Computing</p>
+	              <p><span class="smalltitle">Team</span>Team</p>
+	              <p><span class="smalltitle">Role</span>Full-stack developer</p>
+	              <p><span class="smalltitle">Tool</span>Ionic, AngularJS</p>
+	              <p><span class="smalltitle">Date</span>Feb 2016 ~ Apr 2016</p>
+	              <p><span class="smalltitle">Platform</span>Hybrid Mobile App</p>
+	            </div>
+	            <div class="card-action">
+	              <a href="../ufo"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+	              <span>Project 4 of 14</span>
+	              <a href="../interactiondesign"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="description">
+				<h5>Overview</h5>
+				<p>I took SI 694 - Advanced Social Computing Design Projects course, and conducted a project to develop a mobile application as a part of course objectives. The main purpose of the project was applying the concept of social computing to the application. For this, we've come up with an application which can help people to catch up with their friends easily. My main role was a full-stack developer - I was responsible for building the framework for the application and implementing several features to the application. I also participated in whole processes of ideation, sketches, and validation.</p>
+				<p>&nbsp;</p>
+
+				<h5>Details</h5>
+				<p>First of all, we decided to use Ionic with AngularJS as a main framework for this application, since it saves a lot of times in developing a mobile application. I built basic frameworks(creating an Ionic application and ilnk it to AngularJS) in this part.</p>
+				<p>&nbsp;</p>
+
+				<div class="row">
+					<div class="col s12 m6">
+						<img src="catchup_main.png" class="responsive-img" alt="CatchUp Facebook integration app screen">
+					</div>
+					<div class="col s12 m6">
+						<p>In regards to the application itself, we designed the application to connect with each user's Facebook account, since Facebook is one of the most widely used Social Network Services all over the world, and using its account makes the application easier to grab the list of user's friends. I implemented Facebook intergration </p>
+					</div>
+				</div>
+				<p>&nbsp;</p>
+
+				<div class="row">
+					<div class="col s12 m6">
+						<p>One main feature of the application is chatting. The application lets users to select their friends to catch up, then it triggers the chatting interface. I implemented the real-time chatting interface, and my teammate made connections between the chatting records and the database for storing and retrieving relevant data.</p>	
+					</div>
+					<div class="col s12 m6">
+						<img src="catchup_chatting.png" class="responsive-img" alt="CatchUp chatting interface app screen">
+					</div>
+				</div>
+				<p>&nbsp;</p>
+
+				<img src="catchup_schedule.png" class="responsive-img" alt="CatchUp meeting scheduler interface app screen">
+				<p>The calendar icon placed at the bottom of the chatting interface triggers scheduling feature. Users can find out their free times through calendar app integration, select several time slots they want to meet their friends, suggest places to meet, and send. I implemented whole features in this part.</p>
+				<p>&nbsp;</p>
+
+				<h5>Outcome</h5>
+				<p><a href="https://github.com/nishanbose/catchup" target="_blank">Github Repo</a></p>
+
+				
+			</div>
+
+		</div>
+
+		<div class="push"></div>
+	</div>
+
+	<footer class="footer">
+		<h2>YOUNGHUN LEE</h2>
+		<span class="footerlabel">FULL STACK DEVELOP | UX DESIGN | RESEARCH</span>
+		<div class="footericon">
+			<a href="https://www.linkedin.com/in/younghun-lee-937892106" target="_blank">
+				<i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#0077b5;"></i>
+			</a>&nbsp;&nbsp;
+			<a href="https://github.com/YHLee89" target="_blank">
+				<i class="fa fa-github fa-2x" aria-hidden="true" style="color:black;"></i>
+			</a>&nbsp;&nbsp;
+		</div>
+		<span class="copyright">&copy; YOUNGHUN LEE 2016</span>
+
+	</footer>
+
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+		
+	</script>
+</body>
+</html>
