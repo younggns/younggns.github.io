@@ -4318,7 +4318,8 @@ nav .brand-logo {
   color: #333;
   display: inline-block;
   font-size: 2.1rem;
-  padding: 0;
+  /*padding: 0;*/
+  padding: 0 0 0 1rem;
   white-space: nowrap;
 }
 
