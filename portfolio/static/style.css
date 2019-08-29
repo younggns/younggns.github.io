@@ -29,7 +29,7 @@ h4 {
 }
 
 .row{
-  line-height: 0;
+  /*line-height: 0;*/
 }
 .work_txt{
   line-height: 1.1;
@@ -213,4 +213,20 @@ h3 span.spacer{
 p.process::first-letter {
   font-size: 200%;
   color: #777;
+}
+
+.profile-img{
+  width:10rem;
+  float:left;
+  /*padding-right: 1rem;*/
+  border:0.1em solid #777;
+  margin-right: 1rem;
+}
+.main-container{
+  padding-top: 2rem;
+  width: 80%;
+  float: none !important;
+}
+.pronounced{
+  color:#777;
 }
